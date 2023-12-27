@@ -1,0 +1,17 @@
+.footer {
+  max-width: 480px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__icon:hover {
+  filter: drop-shadow(0px 0 8px rgba(2, 1, 114, 1));
+}
+
+@media (max-width: 420px) {
+  .footer {
+    max-width: 300px;
+  }
+}

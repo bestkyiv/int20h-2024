@@ -1,0 +1,11 @@
+.categories {
+  position: relative;
+}
+
+.categories__heading {
+  margin-bottom: 32px;
+}
+
+.categories__item:nth-child(3) > .card {
+  padding-right: 10px;
+}

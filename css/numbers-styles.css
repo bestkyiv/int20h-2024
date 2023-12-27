@@ -1,0 +1,10 @@
+.numbers {
+  position: relative;
+}
+.numbers__row {
+  margin-top: 32px;
+}
+
+.numbers__heading {
+  margin-bottom: 16px;
+}

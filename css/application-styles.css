@@ -1,0 +1,153 @@
+.application {
+  position: relative;
+  max-width: 962px;
+  margin: 64px auto;
+  padding: 16px 20px;
+
+  border-image: url("../img/application-frame.svg");
+  border-image-slice: 33 33 33 33;
+  border-image-width: 40px 40px 40px 40px;
+  /*border-image-outset: 0 0 0 0;*/
+  border-image-repeat: stretch stretch;
+}
+
+.application__inner {
+  border: rgba(255, 255, 255, 0.5) 4px solid;
+  padding: 24px;
+  background-color: rgba(19, 2, 107, 0.5);
+
+  position: relative;
+  z-index: 1;
+}
+
+.application__heading {
+  text-align: center;
+}
+.application__row {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.application__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.application__milestone {
+  color: #fff;
+}
+
+.application__deadline {
+  color: #49f66f;
+}
+
+.application__milestone-bg > img {
+  position: relative;
+  z-index: 2;
+  left: 0;
+}
+
+.application__gradient {
+  position: relative;
+  z-index: 1;
+  top: -15px;
+  height: 8px;
+  background: linear-gradient(
+    90deg,
+    #0002f7 6.55%,
+    #00ad75 56.08%,
+    #00b66e 61.87%,
+    #00b76e 65.03%,
+    #02ff39 107.65%
+  );
+}
+
+@media (min-width: 993px) {
+  .application__milestone-mobile {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .application__milestone-desktop {
+    display: none;
+  }
+  .application {
+    margin: 64px 100px;
+    border-image: url("../img/application-frame-mobile.svg");
+    border-image-slice: 33 33 33 33;
+    border-image-width: 100px;
+  }
+  .application__inner {
+    border: #872bff 4px solid;
+    background-color: #051026;
+
+    position: relative;
+    z-index: 1;
+  }
+  .application__column {
+    padding: 0 4px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    overflow: clip;
+  }
+  .application__milestone-bg {
+    position: relative;
+    left: -36px;
+  }
+  .application__row {
+    padding: 28px;
+    flex-direction: column;
+  }
+  .application__milestone-mobile {
+    width: 280px;
+  }
+  .application__gradient {
+    display: none;
+  }
+  .application__gradient-mobile {
+    position: relative;
+    top: 54px;
+    width: 4px;
+    height: 500px;
+    background: #0002f7;
+  }
+}
+
+@media (max-width: 767px) {
+  .application {
+    margin: 64px 8px;
+    padding: 16px;
+  }
+
+  .application__milestone-bg {
+    position: relative;
+    left: -22px;
+  }
+  .application__gradient-mobile {
+    height: 380px;
+  }
+  .application__row {
+    padding: 0 0 0 16px;
+    gap: 16px;
+    justify-content: center;
+  }
+  .application__milestone-mobile {
+    width: 200px;
+  }
+  .application__column {
+    padding: 0 0 0 4px;
+  }
+  .application__milestone{
+    font-size: 12px;
+  }
+}
