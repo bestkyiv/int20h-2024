@@ -1,4 +1,4 @@
-const countDownDate = new Date("February 03, 2024 23:59:59").getTime();
+const countDownDate = new Date("March 03, 2024 11:00:00").getTime();
 const formatTimeString = (hours, minutes, seconds) => {
   return `${hours.toString().padStart(2, "0")}:${minutes
     .toString()
@@ -17,7 +17,9 @@ const x = setInterval(function () {
 
   const distance = countDownDate - now;
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+  );
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 

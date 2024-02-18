@@ -61,3 +61,26 @@ details:not([open]) > .faq__answer {
 details[open] > summary {
   margin-bottom: 10px;
 }
+
+.faq__other-questions{
+  margin: 64px auto;
+  max-width: 550px;
+  padding: 0 8px;
+}
+.faq__other-questions > p{
+  margin-top: 8px;
+  color: white;
+}
+.faq__link{
+  color: #02FF39;
+  text-decoration: underline;
+}
+.faq__link:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 420px) {
+  .faq__other-questions {
+    margin: 32px auto 64px;
+  }
+}

@@ -7,7 +7,7 @@
   border-image: url("../img/application-frame.svg");
   border-image-slice: 33 33 33 33;
   border-image-width: 40px 40px 40px 40px;
-  /*border-image-outset: 0 0 0 0;*/
+
   border-image-repeat: stretch stretch;
 }
 
@@ -147,7 +147,7 @@
   .application__column {
     padding: 0 0 0 4px;
   }
-  .application__milestone{
+  .application__milestone {
     font-size: 12px;
   }
 }
